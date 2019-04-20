@@ -1,0 +1,50 @@
+" .vimrc wip - source https://github.com/dougblack/dotfiles/blob/master/.vimrc
+" Plugins {{{
+execute pathogen#infect()
+call pathogen#helptags()
+""" }}}
+" Colours {{{
+let g:solarized_termcolors=256      " set this first if using solarized colorscheme in terminal
+                                    " mode enable 
+
+colorscheme solarized                " set colour scheme
+set background=dark
+syntax enable                       " enable syntax processing
+" }}}
+" Misc {{{
+set noerrorbells 
+set clipboard=unnamed
+" }}}
+" Spaces & Tabs {{{
+set tabstop=4                       " 4 space tab
+set softtabstop=4                   " 4 space tab
+set expandtab                       " use spaces for tabs
+                                    " special comments somewhere in a file that can can declare certain 
+                                    " Vim settings to be used only for that file
+set modelines=1 
+" }}}
+" UI Layout {{{
+set number                          " show line numbers
+set showcmd                         " show command in bottom bar
+set wildmenu                        " visual autocomplete for command menu
+set showmatch                       " highlight matchin [{()}]
+set wrap
+set textwidth=79
+" }}}
+" Searching {{{
+set incsearch                       " search as characters are entered
+set hlsearch                        " highlight matches
+set ignorecase                      " ignore case when searching
+set smartcase                       " ... but not when search pattern contains uppercase chars
+" }}}
+" Line Shortcuts (movement) {{{
+                                    " move vertically by visual line
+                                    " move around lines visually. When there is a very long line
+                                    " that gets visualy wrapped to two lines, `j` won't skip over the
+                                    " `fake` part of the visual line in favour of the next `real` line.
+nnoremap j gj
+nnoremap k gk
+" }}}
+
+
+" vim:foldmethod=marker:foldlevel=0
