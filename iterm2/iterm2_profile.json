@@ -76,6 +76,7 @@
   "BM Growl" : true,
   "Command" : "\/bin\/zsh",
   "Description" : "Default",
+  "Smart Cursor Color" : false,
   "Mouse Reporting" : true,
   "Screen" : -1,
   "Selection Color" : {
@@ -108,11 +109,11 @@
     "Green Component" : 0.93725484609603882
   },
   "Background Color" : {
-    "Red Component" : 0.28281066693042101,
+    "Red Component" : 0.1466064453125,
     "Color Space" : "sRGB",
-    "Blue Component" : 0.322052001953125,
+    "Blue Component" : 0.380767822265625,
     "Alpha Component" : 1,
-    "Green Component" : 0.21296987894464475
+    "Green Component" : 0.157318115234375
   },
   "Character Encoding" : 4,
   "Ansi 11 Color" : {
@@ -287,6 +288,7 @@
     }
   },
   "Window Type" : 0,
+  "Cursor Boost" : 0.19029143258426967,
   "Background Image Location" : "",
   "Blur" : false,
   "Badge Color" : {
